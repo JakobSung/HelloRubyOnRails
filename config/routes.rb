@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'wall/write'
+  get 'wall/write' => 'wall#write'
 
-  get 'wall/posts'
+  post 'wall/posts' => 'wall#posts'
 
   get 'home/hello' => 'home#hello'
   get 'email/email_from' => 'email#email_from'
